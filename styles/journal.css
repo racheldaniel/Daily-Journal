@@ -1,13 +1,40 @@
+body{
+  font-family: 'Forum', cursive;
+  background-image: url(../images/journal.jpeg);
+
+}
+
+h1{
+  font-family: 'Fredericka the Great', cursive;
+
+}
+
+#submit {
+  background-color: #900C3F;
+  color: beige;
+  font-size: 15px;
+  margin-top: 2em;
+  padding: 5px;
+}
+
 fieldset{
   display: flex;
   flex-direction: column;
 
 }
 
-input, textarea, select {
+input, select {
   max-width: 150px;
+}
+
+textarea {
+  max-width: 300px;
 }
 
 form {
   max-width: 500px
+}
+
+ul{
+  list-style: none;
 }
