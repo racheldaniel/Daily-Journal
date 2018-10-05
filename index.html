@@ -25,6 +25,7 @@
     <fieldset>
       <label for="mood">I'm Feeling...</label>
       <select id="moodChoices">
+        <option value="select">--Select--</option>
         <option value="proud">Proud</option>
         <option value="productive">Productive</option>
         <option value="elated">Elated</option>
@@ -39,6 +40,17 @@
     </fieldset>
     <button type="submit" name="submit" value="submit" id= "submit">Record Journal Entry</button>
   </form>
+  <article class=journal>
+    <section class="journal__entry">
+      <ul>
+        <li class="entry--date"></li>
+        <li class="entry--date"></li>
+        <li class="entry--date"></li>
+        <li class="entry--date"></li>
+      </ul>
+    </section>
+
+  </article>
     <script src="scripts/script.js"></script>
 </body>
 </html>
