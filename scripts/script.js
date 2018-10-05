@@ -1,3 +1,4 @@
+// set choices of moods for later selection
 const moodChoices = document.getElementById("moodChoices");
 
 
@@ -13,10 +14,11 @@ document.addEventListener('submit', (e) => {
   console.log(concepts.value)
   console.log(journalEntry.value)
   console.log(mood.value)
+  // after logging values, reset form
   journalDate.value = " "
   concepts.value = " "
   journalEntry.value = " "
-  // mood.value = "select" This isn't working yet-- console.log runs again as well
+  moodChoices.selectedIndex = document.getElementById("moodChoices").firstElementChild 
 
 })  
 
