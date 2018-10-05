@@ -1,6 +1,7 @@
 body{
   font-family: 'Forum', cursive;
   background-image: url(../images/journal.jpeg);
+  font-size: 20px
 
 }
 
@@ -15,6 +16,10 @@ h1{
   font-size: 15px;
   margin-top: 2em;
   padding: 5px;
+}
+
+#submit:hover {
+    opacity: .55;
 }
 
 fieldset{
@@ -37,4 +42,16 @@ form {
 
 ul{
   list-style: none;
+}
+
+section {
+  background-color: beige;
+  border: 2px dotted #900C3F;
+  max-width: 600px;
+  margin: 10px;
+}
+
+.mood, .concepts {
+  font-weight: bold;
+  font-size: .75em;
 }
