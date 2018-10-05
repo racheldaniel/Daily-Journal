@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles/journal.css">
-  <script src="scripts/script.js"></script>
   <title>Daily Journal</title>
 </head>
 <body>
@@ -17,15 +16,16 @@
     </fieldset>
     <fieldset>
       <label for="concepts">Concepts Covered</label>
-      <input type="text" name="concepts id="concepts">
+      <input type="text" name="concepts" id="concepts">
     </fieldset>
     <fieldset>
       <label for="journalEntry">Journal Entry</label>
-      <textarea name="journalEntry" cols="25" rows="3"></textarea>
+      <textarea name="journalEntry" cols="25" rows="3" id="journalEntry"></textarea>
     </fieldset>
     <fieldset>
       <label for="mood">I'm Feeling...</label>
-      <select>
+      <select id="moodChoices">
+        <option value="select">--Select--</option>
         <option value="proud">Proud</option>
         <option value="productive">Productive</option>
         <option value="elated">Elated</option>
@@ -40,5 +40,17 @@
     </fieldset>
     <button type="submit" name="submit" value="submit" id= "submit">Record Journal Entry</button>
   </form>
+  <article class=journal>
+    <section class="journal__entry">
+      <ul>
+        <li class="entry--date"></li>
+        <li class="entry--date"></li>
+        <li class="entry--date"></li>
+        <li class="entry--date"></li>
+      </ul>
+    </section>
+
+  </article>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
